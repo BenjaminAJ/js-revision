@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Local vs Global Variables
+      //Local variables are declared inside a function and can only be accessed within that function.
+      //Global variables are declared outside of any function and can be accessed from anywhere in the code.
+
+      let globalVar = "ben"; //global variable
+
+      // console.log(globalVar, "globalVar");
+
+      function myFunction() {
+        let localVar = "ben"; //local variable
+
+        console.log(localVar, "localVar");
+        //Garbage Collection: The process of automatically freeing up memory by removing objects that are no longer in use.
+        //In JavaScript, the garbage collector automatically frees up memory by removing objects that are no longer referenced in the code.
+        //This helps to prevent memory leaks and keeps the code running efficiently.
+        //GIGO - Garbage In, Garbage Out: This principle states that the quality of output is determined by the quality of the input.
+      }
+
+      // myFunction(); // This will log "ben" to the console
+
+      // console.log(localVar);
+      let userName = "ben"; //global variable
+      // console.log(userName, "userName"); // This will log "ben" to the console
+
+      if (true) {
+        let userName = "john"; //local variable
+
+        // console.log(userName);
+      }
+      // console.log(userName); // This will log "ben" to the console
+
+      //Scope: The context in which a variable is declared and can be accessed.
+      //In JavaScript, there are two types of scope: global scope and local scope.
+
+      //Global scope: Variables declared outside of any function or block are in the global scope and can be accessed from anywhere in the code.
+      //Local scope: Variables declared inside a function or block are in the local scope and can only be accessed within that function or block.
+
+      //Block scope: Variables declared inside a block (e.g., if statement, for loop) are in the block scope and can only be accessed within that block.
+
+      //Ternary Operator: A shorthand way of writing an if-else statement. It takes three operands: a condition, a value if the condition is true, and a value if the condition is false.
+      //Syntax: condition ? valueIfTrue : valueIfFalse
+
+      // if(condition){
+      //     //code to be executed if condition is true
+      // }
+      // else{
+      //     //code to be executed if condition is false
+      // }
+
+      // condition ? truthyStatement : falsyStatement; //Ternary
+
+      let age = 10;
+
+      let isAdult = age >= 18 ? "Adult" : "Not Adult"; //Ternary Operator: returns "Adult" if age is greater than or equal to 18, otherwise returns "Not Adult"
+      console.log(isAdult);
+
+      age >= 18 ? console.log("Adult") : console.log("Not Adult"); //Ternary Operator: logs "Adult" if age is greater than or equal to 18, otherwise logs "Not Adult"
+
+      //Logical Operators: Operators that are used to combine or negate boolean values.
+      //In JavaScript, there are three logical operators: AND (&&), OR (||), and NOT (!).
+
+      //AND (&&): Returns true if both operands are true, otherwise returns false.
+      //Syntax: operand1 && operand2
+
+      let num1 = 10;
+      let num2 = 20;
+
+      console.log(num1 > 5 && num2 < 30); // true
+      console.log(num1 < 5 && num2 < 30); //false
+      console.log(num1 < 5 && num2 > 30); //false
+
+      //OR (||): Returns true if at least one operand is true, otherwise returns false.
+      //Syntax: operand1 || operand2
+
+      console.log(num1 > 5 || num2 < 30); //true
+      console.log(num1 < 5 || num2 < 30); //true
+      console.log(num1 < 5 || num2 > 30); //false
+
+      //NOT (!): Returns true if the operand is false, otherwise returns false.
+      //Syntax: !operand
+
+      console.log(!(num1 > 5)); //false //negates the boolean value of the expression
+      console.log(!true); //false
+      console.log(!false); //true      
+      
+
+      //Github Copilot: A code completion tool that uses machine learning to suggest code snippets and complete code blocks based on the context of the code being written.
+      //It can help developers write code faster and more efficiently by providing suggestions for code completion, syntax highlighting, and error detection.
+    </script>
+  </body>
+</html>
