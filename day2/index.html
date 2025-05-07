@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="header">My header</h1>
+
+    <div>
+      <p>
+        <span class="blue">Paragraph 2</span>
+      </p>
+    </div>
+
+    <div class="blue">
+      <p>Paragraph 1</p>
+    </div>
+
+    <script>
+      /*
+                                                                    document
+
+                                                            head                    body
+
+                                                        title  meta          h1      div       div        script    
+
+                                                                        "My header"   p          p
+
+                                                                                                span 
+
+            */
+
+      // Functions: A block of code that performs a specific task. Functions can take parameters and return values. They can be declared using the function keyword or as arrow functions.
+      //Function Declaration: A way to define a function using the function keyword. It can be called before it is declared in the code.
+      //Function names: A name that identifies a function. Function names should be descriptive and follow the camelCase naming convention.
+      //function names: verbs that describe what the function does. For example, "calculateTotal" or "getUserInfo".
+      function nameofFunction() {
+        //code to be executed
+      }
+      //Function with no parameter
+      function greet() {
+        alert("Welcome to my website!");
+      }
+      // Function with parameter
+      function greet(name) {
+        alert("Welcome, " + name);
+        // alert(`Welcome, ${name}`)
+      }
+      // Function with parameter with default value
+      function greet(name = "Guest") {
+        alert("Welcome, " + name);
+        // alert(`Welcome, ${name}`)
+      }
+
+      // greet(); // This will call(invoke) the greet function and display the alert message
+
+      // let userName = prompt("Enter your name");
+      // greet(userName);
+      // greet("ben");
+      // greet();
+
+      //Function Expression: A way to define a function as a variable. It cannot be called before it is declared in the code.
+      //Function expression: A function that is assigned to a variable. It can be called only after it is declared in the code.
+
+      // const greet = function(name){
+      //     alert("Welcome, " + name);
+      // }
+      // greet();
+
+      // const greet = (name)=>{
+      //     alert("Welcome, " + name);
+      // }
+      // greet();
+
+      // Self Invoking Functions: A function that is executed immediately after it is defined. It does not need to be called separately.
+      // (function(name){
+      //     console.log("I am a self invoking function");
+      //     console.log(name);
+      // })("ben");
+      // ((name)=>{
+      //     console.log("I am a self invoking arrow function");
+      //     console.log(name);
+      // })("ben");
+
+      //DOM - Document Object Model: A programming interface for web documents. It represents the structure of a document as a tree of objects, allowing developers to manipulate the content and structure of a web page using JavaScript.
+      //The DOM is a representation of the HTML document as a tree structure, where each element is a node in the tree. The DOM allows developers to access and manipulate the elements of a web page using JavaScript.
+
+      document; // document object
+
+      //  Accessing Elements in the DOM
+
+      //getElementById("id") returns the html element or null
+      const header = document.getElementById("header");
+      // console.log(header)
+
+      //Manipulate Content
+      console.log(header.textContent); //accessing the text content
+      header.textContent = "Welcome to my website"; //changing the text content(manipulating the text content)
+
+      //Manipulate the Styling
+      header.style.backgroundColor = "black";
+      header.style.color = "white";
+
+      //getElementsByTagName("tagName")        - returns an html collection
+      const pTags = document.getElementsByTagName("p");
+      // console.log(pTags);
+      // console.log(pTags.length);
+      // console.log(pTags[1]);
+
+      //getElementsByClassName("className") - returns an html collection
+      const blues = document.getElementsByClassName("blue");
+      // console.log(blues);
+      // console.log(blues[0]);
+
+      //querySelector(cssSelector) - returns an html element or null //querySelectorAll(cssSelector) - returns a node list
+      // querySelector("#header") - returns the first element that matches the css selector
+      const myHeader = document.querySelector("#header");
+      // console.log(myHeader);
+
+      // console.log(document.querySelector("span"));
+      console.log(document.querySelector("p"));
+
+      //querySelectorAll(cssSelector) - returns a node list
+      //querySelectorAll(".blue") - returns all elements that match the css selector
+      //querySelectorAll("p") - returns all elements that match the css selector
+      console.log(document.querySelectorAll("p"));
+
+      //Exercise: Change the text of the first paragraph to "Hello World"
+      //Exercise 2: Change the text of the second paragraph to "Hello World"
+      //Exercise 3: Change the text of the first paragraph to "Hello World" using querySelector
+      //Exercise 4: Change the text of the second paragraph to "Hello World" using querySelector
+      //Exercise 5: Change the text of the first paragraph to "Hello World" using querySelectorAll
+      //Exercise 6: Change the text of the second paragraph to "Hello World" using querySelectorAll
+      //Exercise 7: Change the text of the first paragraph to "Hello World" using getElementsByTagName
+      //Exercise 8: Change the text of the second paragraph to "Hello World" using getElementsByTagName
+      //Exercise 9: Change the text of the first paragraph to "Hello World" using getElementsByClassName
+    </script>
+  </body>
+</html>
