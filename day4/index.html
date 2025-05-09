@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="p1">Paragraph 1</p>
+    <p id="p2">Paragraph 2</p>
+    <p id="p3">Paragraph 3</p>
+
+
+    <input type="text" id="input1" placeholder="Type something">
+    <!-- <button id="btn">Click me</button> -->
+    <div id="display"></div>
+    <!-- <input type="text" id="input2" value="Input 2"> -->
+
+    <script>
+
+        // Manipulate the content of an HTML element using JavaScript
+
+        // 1. Select the element and change its text content
+        document.getElementById("p1").textContent = "I have been manipulated";
+
+        // 2. Select the element and change its innerText
+            document.getElementById("p2").innerText = "<span>Hello, World</span>";
+
+        // 3. Select the element and change its innerHTML
+        document.getElementById("p3").innerHTML = "<span>Test</span>"
+
+        
+        //Manipulate the styling of an HTMl element using Javascript
+        p2.style.color = "red"; //Change the color of the text to red
+        p2.style.fontSize = "20px"; //Change the font size to 20px
+
+
+        //HTML Events: Actions that occur as a result of user interaction with an HTML element. Examples include clicking a button, hovering over an element, or submitting a form. 
+
+
+        //Event handling
+
+        input1.addEventListener("input", ()=>{
+            display.textContent = input1.value;
+        })
+
+
+    </script>
+</body>
+</html>
