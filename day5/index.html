@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Template strings: ```
+      //Template Literals are enclosed by backticks (``) instead of single or double quotes.
+      let name = "Ben";
+
+      let welcomeMessage = "Hello" + " " + name;
+      //   console.log(welcomeMessage);
+      welcomeMessage = `Hello ${name}`;
+      //   console.log(welcomeMessage);
+
+      //   console.log(typeof welcomeMessage);
+
+      //Concatenation: joining two or more strings together. + is the operator used for concatenation.
+      let firstName = "Ben";
+      let lastName = "Smith";
+      let fullName = firstName + " " + lastName; //Concatenation
+
+      //   console.log(fullName); // Ben Smith
+
+      //Loops used to iterate over a block of code a number of times.
+
+      //for loop: A for loop is a control flow statement that allows code to be executed repeatedly based on a given boolean condition.
+      //The for loop consists of three expressions: initialization, condition, and increment/decrement.
+
+      //for (initialization; condition; increment/decrement) {
+      //    // code block to be executed
+      //}
+
+      //   for (let index = 1; index < 6; index++) {
+      //     console.log(index); // 1 2 3 4 5
+      //   }
+      //   for (let index = 1; index <= 5; index++) {
+      //     console.log(index); // 1 2 3 4 5
+      //   }
+
+      //decrementing the index
+
+        // for (let index = 5; index >= 0; index--){
+        //   console.log(index); //5 4 3 2 1 0
+
+        // }
+
+      //while loop: A while loop is a control flow statement that allows code to be executed repeatedly based on a given boolean condition.
+      //The while loop consists of a condition and a block of code to be executed.
+
+      // while (condition){
+      //     // code block to be executed
+      // }
+    //   let index = -1;
+    //   while (index >= 0) {
+    //     console.log(index);
+    //     index--;
+    //   }
+
+
+
+        //do while loop: A do while loop is a control flow statement that allows code to be executed repeatedly based on a given boolean condition.
+        //The do while loop consists of a block of code to be executed and a condition.
+
+        // do {
+        //     // code block to be executed
+        // } while (condition);
+        let index = 5;
+        // do{
+        //     console.log(index);
+        //     if (index == 3) {
+        //         break; //break statement will terminate the loop when index is 3
+        //     }
+        //     index--;
+        // }while (index >= 0);
+
+        //The do while loop will execute the block of code once before checking the condition, even if the condition is false.
+        //This means that the code block will always be executed at least once, regardless of the condition.
+        //The while loop will only execute the block of code if the condition is true.
+        //This means that the code block may not be executed at all if the condition is false.
+
+
+        //break
+        //The break statement is used to terminate a loop or switch statement.
+        //When a break statement is encountered, the loop or switch statement is immediately terminated and control is transferred to the statement following the loop or switch statement.
+        //continue
+        //The continue statement is used to skip the current iteration of a loop and continue with the next iteration.
+    </script>
+  </body>
+</html>
