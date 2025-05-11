@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // String is a sequence of characters written in quotes(single or double).
+      //Strings are immutable
+
+      let name = "Ben";
+      name = "john";
+      //   console.log(name);
+
+      //length - return the number of characters in a string
+      //   console.log(name.length);
+
+      //toUpperCase()
+      //   console.log(name.toUpperCase());
+      //   console.log(name); //john
+
+      name = "JOHN";
+      //toLowerCase()
+      //   console.log(name.toLowerCase());
+
+      //charAt(index)
+      //   console.log(name.charAt(2)); //H
+
+      //at(index)
+      //   console.log(name.at(1)); //O
+      //   console.log(name.at(-3));
+
+      name = "     ben         ";
+      console.log(name);
+
+      //trimStart() - removes whitespaces at the start(beginning) of the string
+      console.log(name.trimStart());
+
+      //trimEnd() - removes whitespaces at the end of the string
+      console.log(name.trimEnd());
+
+      //trim() - removes excess whitespaces
+      console.log(name.trim());
+
+      let greeting = "Hello, I am Benjamin.";
+
+      //indexOf
+      console.log(greeting.indexOf("I"));
+
+      //lastIndexOf
+      console.log(greeting.lastIndexOf("e"));
+
+      //concat()
+      let firstName = "John";
+      let lastName = "Doe";
+      let fullName = firstName.concat(" ", lastName);
+      console.log(fullName);
+
+      //includes()
+      console.log(greeting.includes("I")); //true
+      console.log(greeting.includes("In")); //false
+      console.log(greeting.includes("in")); //true
+      //startsWith()
+      console.log(greeting.startsWith("Hello")); //true
+      //endsWith()
+      console.log(greeting.endsWith("Benjamin.")); //true
+
+      //slice(startIndex, endIndex) - extracts a part of a string and returns it as a new string, without modifying the original string.
+      //The method takes 2 parameters: the starting index (inclusive) and the ending index (exclusive).
+      greeting = "Hello, I am Benjamin.";
+
+      console.log(greeting.slice(12, 20)); //Benjamin
+
+      console.log(greeting[1]);
+
+      //substring(startIndex, endIndex) - extracts a part of a string and returns it as a new string, without modifying the original string.
+      //The method takes 2 parameters: the starting index (inclusive) and the ending index (exclusive).
+
+      //The difference between slice() and substring() is that substring() does not accept negative indices.
+    </script>
+  </body>
+</html>

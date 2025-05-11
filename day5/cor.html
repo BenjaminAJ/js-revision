@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+</head>
+<body>
+    <h2>Countdown</h2>
+    <div>
+        <input type="text" id="userInput">
+        <button id="startBTN">Start</button>
+    </div>
+    <div id="display"></div>
+
+
+    <script>
+        startBTN.addEventListener("click", startCountDown);
+
+        function startCountDown() {
+            let count = +userInput.value;
+            display.innerHTML = ""; //clear display
+            for(let i = count; i > 0; i--){
+                display.innerHTML += `<p>${i}</p>`;
+            }
+        }
+
+    </script>
+</body>
+</html>
