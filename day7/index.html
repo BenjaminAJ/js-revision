@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // Arrays are used to store multiple values in a single variable.
+        // An array is a special variable, which can hold more than one value at a time.
+
+        let arr = [1,2,3,4,5,6];
+        // console.log(arr); 
+        // console.log(typeof arr); //object
+        let arr2 = [1,'helo', 'hdj', {name:'ben'}, [1,2,3]]
+        //Length
+        // console.log(arr.length);
+        
+        //Accessing array elements
+        // console.log(arr[3]);
+        // console.log(arr[1]);
+
+        //Changing array elements
+        arr[1] = 25;
+        // console.log(arr);
+
+        //Adding elements to an array
+        //push - adds an element to the end of an array
+        arr.push(7,8,9);
+        // console.log(arr);
+        
+        //unshift - adds an element to the beginning of an array
+        arr.unshift(0);
+        // console.log(arr);
+
+        //pop - removes the last element of an array
+        arr.pop();
+        // console.log(arr);
+
+        //shift - removes the first element of an array
+        arr.shift();
+        // console.log(arr);
+
+        // [1, 25, 3, 4, 5, 6, 7, 8]
+        //slice(startIndex, endIndex) - extract elements from an array
+        let slicedArr = arr.slice(2,5);
+        // console.log(slicedArr); // [3,4,5]
+
+        //spice(startIndex, deleteCount, item1, item2, ...) - add/remove elements from an array
+        let fruits = ['banana', 'orange', 'apple', 'mango'];
+        console.log(fruits);
+        
+
+        fruits.splice(2,1); //delete 1 element from index 2
+        fruits.splice(2, 0, "grape", "kiwi") //add grape at index 2
+        fruits.splice(2,1 , "lemon");
+        console.log(fruits);
+
+        
+       //forEach - executes a function for each element in an array
+        // fruits.forEach(function(fruit, i){
+        //     console.log(fruit);
+        // })
+
+        // fruits.forEach((fruit, i) => {
+        //     console.log(fruit);
+        // })
+
+        function display(fruit, i){ //declared function
+            console.log(fruit);
+        }
+        // const display = (fruit, i) => { //expression function 
+        //     console.log(fruit);
+        // }   
+        // const display = function(fruit, i){ //expression function
+        //     console.log(fruit);
+        // }
+
+        // fruits.forEach(display);
+      
+        //findIndex - returns the index of the first element that satisfies the provided testing function. Otherwise, it returns -1.
+        let index = fruits.findIndex((fruit)=>{
+            return fruit.toLowerCase() === "OrAnge".toLowerCase();
+        })
+        console.log(index)
+        
+        //find - returns the value of the first element that satisfies the provided testing function. Otherwise, it returns undefined.
+        let elem = fruits.find((fruit)=>{
+            return fruit.toLowerCase() === "kiwi";
+        })
+        console.log(elem);
+        
+        
+    </script>
+</body>
+</html>
