@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 8. Write a declared function printElement that takes two arguments (element and index) and prints them. Use this function with forEach on an array of your choice.
+
+      function printElement(element, index) {
+        console.log(`Element: ${element}; Index: ${index}`);
+      }
+
+      const nums = [1, 2, 3, 4, 5];
+      //   console.log(nums);
+
+      //   nums.forEach((num,i)=>{
+      //     printElement(num,i)
+      //   })
+
+      //   nums.forEach(printElement);
+
+      //   9. Write an arrow function doubleValue that doubles a number. Use this function with forEach on an array of numbers to print the doubled values.
+      //    nums = [1,2,3,4,5];
+
+      const doubleValue = (number) => {
+        return number * 2;
+      };
+
+      //   nums.forEach((num) => {
+      //     let doubledNum = doubleValue(num);
+      //     console.log(doubledNum);
+      //   });
+
+      // 10.
+      // Create an array of student objects, where each object has a name and score. Example:
+      // let students = [
+      //     { name: 'Alice', score: 85 },
+      //     { name: 'Bob', score: 92 },
+      //     { name: 'Charlie', score: 78 }
+      // ];
+      // Use forEach to print each student's name and score.
+      // Use splice to add a new student at index 1.
+      // Use splice to remove the student with the lowest score.
+
+      let students = [
+        { name: "Alice", score: 85 },
+        { name: "Bob", score: 92 },
+        { name: "Charlie", score: 78 },
+      ];
+      // Use forEach to print each student's name and score.
+
+      students.forEach(displayStudentData);
+
+      function displayStudentData(student) {
+        console.log(`Name: ${student.name}; Score: ${student.score}`);
+      }
+      // Use splice to add a new student at index 1.
+
+      students.splice(1, 0, { name: "Ben", score: 10 });
+      console.log(students);
+
+      // Use splice to remove the student with the lowest score.
+
+      students.splice(1, 1);
+      console.log(students);
+
+    //   Filter(callBackFunction) - creates a new array with all elements that pass the test implemented by the provided function.
+    //   The filter() method returns a new array, and the original array will not be changed.
+    //   The filter() method does not execute the function for empty elements.
+    //   The filter() method returns an empty array if no elements pass the test.
+    //   The filter() method can be used to filter an array of objects.
+
+
+    let numbers = [1,2,3,4,5,6,7,8,9];
+
+    let evenNumbers = numbers.filter((elem)=>{
+        return elem % 2 === 0
+    })
+    console.log(evenNumbers);
+
+    let oddNumbers = numbers.filter((num)=>{
+        return num % 2 !== 0
+    })
+    console.log(oddNumbers);
+
+
+
+    let balls = [{color:"red"}, {color:"blue"}, {color:"blue"}, {color:"red"}, {color:"black"}];
+
+    let redBalls = balls.filter((ball)=>{
+       return ball.color === "red"
+    })
+    console.log(redBalls);
+    let blueBalls = balls.filter((ball)=>{
+        return ball.color === "blue"
+    })
+    
+    
+    </script>
+  </body>
+</html>

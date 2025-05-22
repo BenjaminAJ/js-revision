@@ -49,6 +49,7 @@ Functions with forEach
 
 8.
 Write a declared function printElement that takes two arguments (element and index) and prints them. Use this function with forEach on an array of your choice.
+
 9.
 Write an arrow function doubleValue that doubles a number. Use this function with forEach on an array of numbers to print the doubled values.
 
