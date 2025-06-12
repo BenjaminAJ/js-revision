@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Object - collection of key-value pairs
+      //Object - stores multiple values in a single variable
+      let student = {};
+
+      student.name = "John Doe";
+
+      // console.log(student.address);
+
+      student.address = "456 Elm St, Springfield";
+
+      // console.log(student.address);
+      // student.displayStudentName();
+
+      //Accessing object properties
+      // console.log(student.name);
+
+      //Array - ordered collection of items
+
+      //Array vs Object
+      // array - ordered collection of items
+      // object - unordered collection of key-value pairs
+      let students = ["John Doe", "Jane Smith", "Alice Johnson"];
+      // console.log(students[1]); // Accessing the second element in the array //  Jane Smith
+
+      let studentDetails = {
+        name: "John Doe",
+        age: 20,
+        address: "123 Main St, Springfield",
+      };
+      // console.log(studentDetails.name); // Accessing the name property of the object using dot notation // John Doe
+      // console.log(studentDetails["name"]); // Accessing the name property using bracket notation // John Doe
+
+      //Math - built-in object for mathematical constants and functions
+
+      const PI = Math.PI;
+      const E = Math.E; //Euler's number
+
+      //Math methods
+      //Random - returns a random number between 0 (inclusive) and 1 (exclusive)
+      // console.log(Math.random());
+
+      //floor - rounds down to the nearest integer
+      // console.log(Math.floor(6.7));
+
+      //ceil - rounds up to the nearest integer
+      // console.log(Math.ceil(6.7));
+
+      //abs - returns the absolute value of a number
+      // console.log(Math.abs(-5));
+
+      //trunc - removes the decimal part of a number
+      // console.log(Math.trunc(6.7));
+
+      //round - rounds a number to the nearest integer
+      // console.log(Math.round(6.7));
+      // console.log(Math.round(6.4)); // 6.4 rounds down to 6, while 6.5 rounds up to 7
+
+      //Number from 1 to 10
+      console.log(Math.floor(Math.random() * 10) + 1); //1-10
+      // console.log(Math.floor(Math.random() * 10)); //0-9
+
+      // Math.floor(Math.random() * (max - min) ) + min
+
+      //200-600
+      console.log(Math.floor(Math.random() * (600 - 200)) + 200); //200-600
+
+      //PEDMAS
+
+
+    </script>
+  </body>
+</html>
